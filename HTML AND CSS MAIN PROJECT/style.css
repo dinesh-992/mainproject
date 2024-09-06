@@ -1,0 +1,29 @@
+*,body{width:100%}#main,div{margin-left:20px}header,nav{display:flex;overflow:hidden}#main,header,nav{overflow:hidden}*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;padding:0;overflow-x:hidden}#titlee{font-family:Poppins,sans-serif;font-style:italic;margin-left:1.1em}header{box-shadow:rgba(0,0,0,.16) 0 10px 36px 0,rgba(0,0,0,.06) 0 0 0 1px;background-color:rgba(0,0,0,.87);align-items:center;width:100vw;color:rgba(128,128,128,.943)}#header2{justify-items:end}#headerlogo{width:150px}#ruby:hover{border-color:#ff3131}section:hover{border-color:#fdbd01;border-width:2px;-webkit-transform:scale(.8);-ms-transform:scale(.8);transform:scale(1.1);transition:1s}nav{background-color:#d3d3d3;padding:10px;text-align:center;justify-content:space-between}#nav1:hover{background-color:#ff31317c;transition:.5s ease-in;border-radius:10px}#silver,section{border:2px solid #fff;transition:1s;background-color:#fff;vertical-align:top;display:inline-block;margin-left:39px;margin-bottom:10px;margin-top:15px;width:15.4em;height:24em}a{text-decoration:none}#blink{font-size:40px;background:-webkit-linear-gradient(#eee,#333);-webkit-background-clip:text;-webkit-text-fill-color:transparent}section{border-radius:5px;box-shadow:gold 2.95px 2.95px 9px 2.6px}#silver{border-radius:5px;box-shadow:silver 2.95px 2.95px 9px 2.6px}#ruby{background-color:#fff;vertical-align:top;display:inline-block;border:2px solid #fff;margin-left:39px;margin-bottom:10px;margin-top:15px;width:15.4em;height:24em;border-radius:5px;box-shadow:#ff3131 3.95px 2.95px 9px 6.6px}#aus,#indian{top:2px;border-radius:2px;left:10px;position:relative}#vk,#vk1{border-top-left-radius:5px;border-top-right-radius:5px;width:243px;height:200px}#indian{width:30px}#viratname{letter-spacing:2px;position:relative;left:65px;top:-43px}#aus{width:35px}#type{position:relative;top:-65px;color:grey;left:55px}#batting{position:relative;top:-75px;left:10px}#fielding{position:relative;top:-85px;left:10px}#style{position:relative;top:-95px;left:10px}#HS{position:relative;top:-189px;left:135px}#clutch{position:relative;top:-199px;left:135px}#Stability{position:relative;top:-210px;left:135px}#Category{position:relative;top:-214px;left:66px}#buy{position:relative;top:-214px;left:90px}
+header{
+    z-index: 1000;   /* Ensures the header is above other elements */
+    position: fixed;  /* Fixes the header in place */
+display: block;
+background-color: black;
+}
+#main{
+    padding-top: 140px;
+
+}
+#nav1:hover{
+background-color: rgba(255, 255, 255, 0.58);
+}
+footer{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.402);
+padding-bottom: 10PX;
+padding-top: 10PX;
+}
+#icon{
+    width:30px;
+}
+#icon1{
+    width: 37px;
+}
+#main{
+    margin-left: 35px;
+}
