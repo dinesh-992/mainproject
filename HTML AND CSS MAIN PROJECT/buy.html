@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,69 +13,93 @@
     <link rel="icon" href="./main logo.png">
 
     <style>
-        .d1,.d2{width:50%;height:100vh}button:hover{background-color:#90ee90;color:#fff;border:2px solid grey}a{color:#6d6c6c}*{width:100%}#cancel:hover{background-color:rgba(255,0,0,.473)}.d1{background-color:#fff;padding:10px 20px 10px 10px}.d2{background-color:rgba(211,211,211,.596)}.container{width:100%;display:flex;flex-wrap:wrap}h1{font-family:Poppins,sans-serif;font-style:italic}
+        .d1, .d2 {
+            height: 100vh;
+        }
+        button:hover {
+            background-color: #90ee90;
+            color: #fff;
+            border: 2px solid grey;
+        }
+        a {
+            color: #6d6c6c;
+        }
+        #cancel:hover {
+            background-color: rgba(255, 0, 0, .473);
+        }
+        .d1 {
+            background-color: #fff;
+            padding: 10px 20px 10px 10px;
+        }
+        .d2 {
+            background-color: rgba(211, 211, 211, .596);
+        }
+        h1 {
+            font-family: Poppins, sans-serif;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-   <div class="container">
-    <div class="d1">
-        <h1>CardSpoT.</h1>
-        
-            <label style="margin-top: 40px;" for="contact"><span style="font-weight: 700;">Contact Information</span></label>
-            <input id="contact" style="border-color: rgb(226, 224, 224); height: 50px; border-radius: 5px; margin-top: 10px;" type="number" placeholder="Phone Number" required autofocus>
-         
-            <label style="margin-top: 20px;" for="f_name"><span style="font-weight: 700;">Delivery</span></label>
-
-            <label for="f_name" style="margin-top: 20px;">First Name</label>
-            <input type="text" placeholder="Name" required style="border-radius: 5px;">
-            <label for="l_name" style="margin-top: 20px;">Last Name</label>
-            <input type="text" placeholder="Last Name" style="border-radius: 5px;" required>
-            <label for="age" style="margin-top: 20px;">Age</label>
-            <input type="text" placeholder="Enter Age" style="border-radius: 5px;" required>
-            <label for="country" style="margin-top: 20px;">Country</label>
-
-            <select name="country" id="country" required>
-                <option value="select">Select</option>
-                <option value="india">India</option>
-            </select> 
-            <label for="Address" style="margin-top: 20px;">Address</label>
-            <textarea required placeholder="House no -\nstreet -\nlandmark -\ncity/town -\nstate -"></textarea>
-     
-
-    </div>
-    <div class="d2">
-        <h3 style="margin-top: 80px; text-align: center;">Payment & Choice</h3>
-        <p style="text-align: center; font-size: small;color: rgb(179, 163, 163);">All Transactions made here are secure</p>
-        <form>
-        <label for="card">Choose card(s):</label>
-        <select style="margin-top: 10px;" name="cars" id="cars" required>
-            <optgroup label="Ruby Rated">
-                <option value="rubyrated1">Random Card (Ruby) 200/-</option>
-            </optgroup>
-            <optgroup label="Gold Rated">
-                <option value="gr1">Random Card (Gold) 50/-</option>
-            </optgroup>
-            <optgroup label="Silver Rated">
-                <option value="sr1">Random Card (Silver) 20/-</option>
-            </optgroup>
-        </select> 
-        <div style="margin-top: 50px;">
-            <label for="payment">Mode of payment:</label>
-            <select style="margin-top: 10px;" name="payment" id="payment" required> 
-                <option value="">Select</option>
-                <option value="cash">Cash on Delivery</option>
-            </select>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d1 text-center">
+                <h1>CardSpoT.</h1>
+                <form action="./thankyou.html">
+                <label style="margin-top: 40px;" for="contact"><span style="font-weight: 700;">Contact Information</span></label><br>
+                <input id="contact" style="border-color: rgb(226, 224, 224); height: 50px; border-radius: 5px; margin-top: 10px;" type="number"  pattern="[6-9][0-9]{9}"  placeholder="Phone Number" required autofocus><br>
+                
+                <label style="margin-top: 20px;" for="f_name"><span style="font-weight: 700;">Delivery</span></label><br>
+                <label for="f_name" style="margin-top: 20px;">First Name</label><BR>
+                <input type="text" placeholder="Name" required style="border-radius: 5px;" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed." ><br>
+                <label for="l_name" style="margin-top: 20px;">Last Name</label><br>
+                <input type="text" placeholder="Last Name" style="border-radius: 5px;" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed."  required><br>
+                <label for="age" style="margin-top: 20px;">Age</label><br>
+                <input type="text" placeholder="Enter Age" style="border-radius: 5px;" required><br>
+                <label for="country" style="margin-top: 20px;">Country</label><br>
+                <select name="country" id="country" required><br>
+                    <option value="select">Select</option>
+                    <option value="india">India</option>
+                </select> <br>
+                <label for="Address" style="margin-top: 20px;">Address</label><br>
+                <textarea pattern=".+?" title="Address cannot be empty." required placeholder="House no -\nstreet -\nlandmark -\ncity/town -\nstate -"></textarea>
+            </div>
+            <div class="col-md-6 d2 text-center">
+                <h3 style="margin-top: 80px; text-align: center;">Payment & Choice</h3>
+                <p style="text-align: center; font-size: small;color: rgb(179, 163, 163);">All Transactions made here are secure</p>
+                
+                <br>
+                    <label for="card">Choose card(s):</label><br>
+                    <select style="margin-top: 10px;" name="cars" id="cars" required>
+                        <optgroup label="Ruby Rated">
+                            <option value="rubyrated1">Random Card (Ruby) 200/-</option>
+                        </optgroup>
+                        <optgroup label="Gold Rated">
+                            <option value="gr1">Random Card (Gold) 50/-</option>
+                        </optgroup>
+                        <optgroup label="Silver Rated">
+                            <option value="sr1">Random Card (Silver) 20/-</option>
+                        </optgroup>
+                    </select> 
+                    <div style="margin-top: 50px;">
+                        <label for="payment">Mode of payment:</label><br>
+                        <select style="margin-top: 10px;" name="payment" id="payment" required> 
+                            <option value="">Select</option>
+                            <option value="cash">Cash on Delivery</option>
+                        </select>
+                    </div>
+                    <button style="transition: 1s ease; width: 100px; margin-top: 50px; border-radius: 10px; border: 2px solid grey;" type="submit">
+Place Order
+                    </button>
+                    <button id="cancel" style="transition: 1s ease; width: 100px; margin-top: 50px; border-radius: 10px; border: 2px solid grey;">
+                        <a style="text-decoration: none;" href="./home.html">Cancel</a>
+                    </button>
+                </form>
+            </div>
         </div>
-        <button style="transition: 1s ease; width: 100px; margin-top: 50px; border-radius: 10px; border: 2px solid grey;" type="submit">
-            <a style="text-decoration: none;" href="./thankyou.html">Place order</a>
-        </button>
-        <button id="cancel" style="transition: 1s ease; width: 100px; margin-top: 50px; border-radius: 10px; border: 2px solid grey;">
-            <a style="text-decoration: none;" href="./home.html">Cancel</a>
-        </button>
     </div>
-</form>
-   </div>
 </body>
 </html>
+
 
 
