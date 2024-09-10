@@ -3,73 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Order in CardSpoT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>CardSpoT.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./main logo.png">
-    <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
 
-<style>
-  div{background-color:#f9f9f9a4;border:1px solid #ccc;border-radius:8px;padding:20px;margin:20px auto;max-width:600px;box-shadow:0 4px 8px rgba(0,0,0,.1);font-family:Arial,sans-serif;color:#333}h1{font-family:Poppins,sans-serif;font-style:italic}#blink{font-size:40px;background:-webkit-linear-gradient(#eee,#333);-webkit-background-clip:text;-webkit-text-fill-color:transparent}#icon1{width:35px}*{width:100%}.combine{display:flex;justify-content:space-between}#titlee{font-size:2em;font-weight:bolder}.container{display:flex;flex-wrap:wrap}#icon{width:30px}footer{text-align:center}#menuToggle,#menuToggle span{display:block;position:relative;z-index:1}#menu,#menuToggle span:first-child{transform-origin:0% 0%}body{margin:0;padding:0;background:#232323;color:#cdcdcd;font-family:"Avenir Next",Avenir,sans-serif}#menuToggle{top:50px;left:50px;-webkit-user-select:none;user-select:none}#menuToggle a{text-decoration:none;color:#232323;transition:color .3s}#menuToggle a:hover{color:tomato}#menuToggle input{display:block;width:40px;height:32px;position:absolute;top:-7px;left:-5px;cursor:pointer;opacity:0;z-index:2;-webkit-touch-callout:none}#menuToggle span{width:33px;height:4px;margin-bottom:5px;background:#cdcdcd;border-radius:3px;transform-origin:4px 0px;transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s}#menuToggle span:nth-last-child(2){transform-origin:0% 100%}#menuToggle input:checked~span{opacity:1;transform:rotate(45deg) translate(-2px,-1px);background:#232323}#menuToggle input:checked~span:nth-last-child(3){opacity:0;transform:rotate(0) scale(.2,.2)}#menuToggle input:checked~span:nth-last-child(2){transform:rotate(-45deg) translate(0,-1px)}#menu{position:absolute;width:300px;margin:-100px 0 0 -50px;padding:125px 50px 50px;background:#ededed;list-style-type:none;-webkit-font-smoothing:antialiased;transform:translate(-100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1)}#menu li{padding:10px 0;font-size:22px}#menuToggle input:checked~ul{transform:none}</style>
-  </head>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h1, h3 {
+            font-weight: 600;
+        }
+      
+        button:hover {
+            background-color: #90ee90;
+            color: #fff;
+            border: 2px solid grey;
+        }
+        #cancel:hover {
+            background-color: rgba(255, 0, 0, .473);
+        }
+        .form-control, .form-select {
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
- 
-  <header class="text-center" >
-    <h1 id="titlee" class="animate__animated animate__zoomIn"><span id="blink">C</span>ard <span id="blink">S</span>poT.</h1>
-
-  </header>
-  
-  <div class="container">
-   
- 
-        <section class="features">
-            <div class="feature">
-                <h2>Choose a Category</h2>
-                <p>Explore various themes of collectible cards.
-                  <ul>
-                    <li>Ruby</li>
-                    <li>Gold</li>
-                    <li>Silver</li>
-                  </ul>
-                </p>
-          
-                <h2>Random Surprise</h2>
-                <p>
-                  <ul>
-<li>                    This element of surprise keeps the thrill of collecting alive and encourages you to build your collection!Purchase and receive a random card from your chosen category.<br>
-</li>                  
-<li>
-
-  <p>NOTE - Ruby rating is given only to retired players who's perfomance and contribution was top - notch for their country's</p>
-
-</ul>
-            
-            
-                <h2>Exclusive Gift</h2>
-                <p>Once you collect all cards, receive a personalized card with your name! with WATER Category (most precious)</p>
-                <a class="shop-button " href="./home.html">Shop Now</a>
-
-              </div>
-            
-        </section>
-       
-        
-    <footer>
-        <p>&copy; Tallam Dinesh 
-          <section>
-          <a href="https://www.instagram.com/tallam_dinesh?igsh=MXViYmd5OXRsNTZybQ%3D%3D&utm_source=qr">        <img  id="icon" src="./insta.png" width="30px">  
-          </a>
-          <a href="mailto:2000030992cse@gmail.com"><img id="icon1" src="./mail.png"></a>
-          <a href="https://www.linkedin.com/in/tvndinesh/"><img  id="icon" src="./linkedin.png" width="30px">  
-          </a>
-          <a href="https://wa.me/917569803523?text=Great work Dinesh!"><img id="icon" src="./whatsapp(1).svg"></a>
-      </section>
-        
-    </footer>
-</div>
-
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 form-container mx-auto">
+                <h1 class="text-center" ><em>CardSpoT.</em></h1><br><br>
+                <form action="./thankyou.html">
+                    <div class="mb-3">
+                        <label for="contact" class="form-label"><strong>Contact Information</strong></label>
+                        <input id="contact" type="number" class="form-control" pattern="[6-9][0-9]{9}" placeholder="Phone Number" required autofocus>
+                    </div>
+                    <div class="mb-3">
+                        <label for="f_name" class="form-label"><strong>Delivery</strong></label><br>
+                        <label for="f_name" class="form-label">First Name</label><br>
+                        <input type="text" class="form-control" placeholder="Name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed.">
+                    </div>
+                    <div class="mb-3">
+                        <label for="l_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed.">
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" placeholder="Enter Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <select name="country" id="country" class="form-select" required>
+                            <option value="select">Select</option>
+                            <option value="india">India</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Address" class="form-label">Address</label>
+                        <textarea class="form-control" pattern=".+?" title="Address cannot be empty." required placeholder="House no -\nstreet -\nlandmark -\ncity/town -\nstate -"></textarea>
+                    </div>
+            </div>
+            <div class="col-md-6 form-container mx-auto">
+                <h3 class="text-center">Payment & Choice</h3>
+                <p class="text-center text-muted">All Transactions made here are secure</p>
+                <div class="mb-3">
+                    <label for="card" class="form-label">Choose card(s):</label>
+                    <select name="cars" id="cars" class="form-select" required>
+                        <optgroup label="Ruby Rated">
+                            <option value="rubyrated1">Random Card (Ruby) 200/-</option>
+                        </optgroup>
+                        <optgroup label="Gold Rated">
+                            <option value="gr1">Random Card (Gold) 50/-</option>
+                        </optgroup>
+                        <optgroup label="Silver Rated">
+                            <option value="sr1">Random Card (Silver) 20/-</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="payment" class="form-label">Mode of payment:</label>
+                    <select name="payment" id="payment" class="form-select" required>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-success" type="submit">Place Order</button>
+                    <button id="cancel"  onclick="window.history.back()" class="btn btn-danger">
+cancel
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
